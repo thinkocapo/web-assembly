@@ -5,18 +5,18 @@ Sentry.init({
   debug: true,
 });
 
+// SENTRY DOCS
 loadWasm("./node_modules/hello-wasm/hello_wasm_bg.wasm").then(callback => {
   console.log("callback", callback)
-
   // If greet() throws an error in wasm, then sentry sdk captures it? shows stack trace?
-  // callback.instance.exports.greet()
-  captureError()
+  // callback.instance.exports.greet("name is")
+  // captureError()
 })
 
-// from mdn tutorial + readme in this repo
+// MDN DOCS - still works
 // import("./node_modules/hello-wasm/hello_wasm.js").then((js) => {
-  // js.greet("WebAssembly");
-  // js.greet();
+//   js.greet("WebAssembly");
+//   // js.greet();
 // });
 
 function captureError() {
