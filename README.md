@@ -53,3 +53,6 @@ https://github.com/getsentry/symbolicator/tree/master/wasm-split
 a62dbed038d38366ad89.module.wasm:0x1881 Uncaught (in promise) RuntimeError: unreachable
     at http://localhost:8080/a62dbed038d38366ad89.module.wasm:wasm-function[2]:0x1881
 ```
+
+TODO the wasm-split, https://github.com/getsentry/symbolicator/tree/master/wasm-split
+BUT, .greet() should work anyways...
