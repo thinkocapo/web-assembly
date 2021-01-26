@@ -1,4 +1,5 @@
 hello-wasm/target
+hello-wasm/pkg
 site/node_modules
 *node_modules
 notes.txt
